@@ -178,6 +178,7 @@ import Axios from 'axios';
 // import 'popper.js';
 import { Modal } from 'bootstrap';
 import bootbox from 'bootbox';
+import { renable } from '../../patience-is-a-virtue';
 
 export default {
     name: 'EditorImage',
@@ -365,7 +366,7 @@ export default {
                     window.reEnablePatientButtons();
                 })
                 .catch(err => {
-                    window.reEnablePatientButtons();
+                    renable();
                 });
         },
         onDragEnter(e) {

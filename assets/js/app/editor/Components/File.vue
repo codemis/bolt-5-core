@@ -146,6 +146,7 @@
 import field from '../mixins/value';
 import Axios from 'axios';
 import bootbox from 'bootbox';
+import { renable } from '../../patience-is-a-virtue';
 
 export default {
     name: 'EditorFile',
@@ -310,11 +311,11 @@ export default {
                     }, {once : true})
 
                     $('.bootbox-input').attr('name', 'bootbox-input');
-                    window.reEnablePatientButtons();
+                    renable();
                 })
                 .catch(err => {
                     console.warn(err);
-                    window.reEnablePatientButtons();
+                    renable();
                 });
         },
         onDragEnter(e) {
