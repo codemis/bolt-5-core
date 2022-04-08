@@ -1,9 +1,83 @@
 Changelog
 =========
 
+## 5.1.7
+
+Released: 2022-03-31
+
+### 🐛 Bug fixes
+
+- Update User Edit Form so it has a unique ID (Joossensei, [#3150](https://github.com/bolt/core/pull/3150))
+- Fix `number` field template so it works within Collections. (dadaxr, [#3146](https://github.com/bolt/core/pull/3146))
+- Ensure correct links in menu, when changing `backend_url` in `services.yaml` (bobdenotter, [#3145](https://github.com/bolt/core/pull/3145))
+- Handle multiple `EntityManager` prefixes (matesko, [#3142](https://github.com/bolt/core/pull/3142))
+- Handle 'double wrapped' database connections (simongroenewolt, [#3139](https://github.com/bolt/core/pull/3139))
+- Reverse search and replace arrays in `str_replace` (HeinDR, [#3137](https://github.com/bolt/core/pull/3137))
+- Don't break `/bolt/api/` if it's set to public and it's accessed in a browser (bobdenotter, [#3136](https://github.com/bolt/core/pull/3136))
+
+### 🛠️ Miscellaneous
+
+- Update Dutch translations 🇳🇱 (bobdenotter, [#3156](https://github.com/bolt/core/pull/3156))
+- Translation of missing German translations 🇩🇪  (obsti8383, [#3152](https://github.com/bolt/core/pull/3152))
+- Add `cite` to `allowed_tags` (bobdenotter, [#3149](https://github.com/bolt/core/pull/3149))
+- Adding cache decorator for `Formatter` (bobdenotter, [#3143](https://github.com/bolt/core/pull/3143))
+
+### ⚙️ Code Quality / Developer Experience
+
+- Let's make it work on both Composer 2.3.x as well as 2.2.x (bobdenotter, [#3154](https://github.com/bolt/core/pull/3154))
+- Refactor Composer scripts to work with Composer 2.3.0 (bobdenotter, [#3151](https://github.com/bolt/core/pull/3151))
+- Remove unused `findParents` method (bobdenotter, [#3141](https://github.com/bolt/core/pull/3141))
+
+
+## 5.1.5
+
+Released: 2022-03-22
+
+### 🐛 Bug fixes
+
+- Use `requestStack` to access current request when needed. (vlad-ghita, [#3132](https://github.com/bolt/core/pull/3132))
+- Update float field so it uses `step='any'` by default (Joossensei, [#3122](https://github.com/bolt/core/pull/3122))
+- Bugfix: verify setting correct tags for caching works correctly (bobdenotter, [#3119](https://github.com/bolt/core/pull/3119))
+
+### 📦 Additions and new features
+
+- Updates to allow custom theming for security area (vlad-ghita, [#3125](https://github.com/bolt/core/pull/3125))
+
+### 🛠️ Miscellaneous
+
+- Use routing to create the link to the ContentType overview (andysh-uk, [#3133](https://github.com/bolt/core/pull/3133))
+- Fix YAML migrations (bobdenotter, [#3118](https://github.com/bolt/core/pull/3118))
+
+
+## 5.1.4
+
+Released: 2022-03-13
+
+### 🐛 Bug fixes
+
+- Fix Select field with empty value, for `required: false` and `allowempty: true` (jordanaubert, [#3116](https://github.com/bolt/core/pull/3116))
+- Update `Date.vue` dateFormat to include seconds (simongroenewolt, [#3096](https://github.com/bolt/core/pull/3096))
+- Fix custom homepage setting: allow singular ContentType slugs (bobdenotter, [#3093](https://github.com/bolt/core/pull/3093))
+- Fixes parsing for editing Yaml files in the backend editor (Joossensei, [#3090](https://github.com/bolt/core/pull/3090))
+- Fix YAML migrations  (bobdenotter, [#3118](https://github.com/bolt/core/pull/3118))
+
+### 🛠️ Miscellaneous
+
+- Set `api:get:` to `PUBLIC_ACCESS` for public access to the read-endpoint of the API (bobdenotter, [#3111](https://github.com/bolt/core/pull/3111))
+- Add map to htaccess (peterboorsma, [#3108](https://github.com/bolt/core/pull/3108))
+
+### ⚙️ Code Quality / Developer Experience
+
+- Tiny fix, as per PHPStan (bobdenotter, [#3109](https://github.com/bolt/core/pull/3109))
+- fix wrong copy paste in comments (dadaxr, [#3105](https://github.com/bolt/core/pull/3105))
+- Bump url-parse from 1.5.6 to 1.5.10 (dependabot[bot], [#3102](https://github.com/bolt/core/pull/3102))
+- Update cypress tests so it retries on failure (Joossensei, [#3099](https://github.com/bolt/core/pull/3099))
+- Refactoring deprecations in Symfony 5 -> 6 (bobdenotter, [#3091](https://github.com/bolt/core/pull/3091))
+
+
 ## 5.1.3
 
-Released: 2021-02-10
+Released: 2022-02-10
 
 ### 🐛 Bug fixes
 
@@ -34,7 +108,7 @@ Released: 2021-02-10
 
 ## 5.1.2
 
-Released: 2021-01-19
+Released: 2022-01-19
 
 ### 🐛 Bug fixes
 
@@ -49,7 +123,6 @@ Released: 2021-01-19
 - Update `package-lock.json` (Joossensei, [#3045](https://github.com/bolt/core/pull/3045))
 - New feature: Allow empty value for select form controls, based on user setting. (vlad-ghita, [#3041](https://github.com/bolt/core/pull/3041))
 - Update serializable interface (bobvandevijver, [#3039](https://github.com/bolt/core/pull/3039))
-- Prepare release 5.1.1 (bobdenotter, [#3036](https://github.com/bolt/core/pull/3036))
 - Minor cleanup on `services.yaml` (bobdenotter, [#3035](https://github.com/bolt/core/pull/3035))
 
 ### ⚙️ Code Quality / Developer Experience
@@ -60,7 +133,7 @@ Released: 2021-01-19
 
 ## 5.1.1
 
-Released: 2021-01-05
+Released: 2022-01-05
 
 ### 🐛 Bug fixes
 
@@ -510,7 +583,6 @@ disclosing them to us responsibly! 👏🙏
 
 - Remove incorrect `PHPDoc @var` tag in RelationRepository (I-Valchev, [#2374](https://github.com/bolt/core/pull/2374))
 - Remove (abandoned) `sensiolabs/security-checker` (bobdenotter, [#2356](https://github.com/bolt/core/pull/2356))
-- Prepare Release 4.1.12 (bobdenotter, [#2339](https://github.com/bolt/core/pull/2339))
 
 
 ## 4.1.12
@@ -1029,7 +1101,6 @@ Released: 2020-08-24
 
 ### 🛠️ Miscellaneous
 
-- Prepare release 4.0.0-rc.36 (bobdenotter, [#1752](https://github.com/bolt/core/pull/1752))
 - Tweaking default Skeleton theme (bobdenotter, [#1751](https://github.com/bolt/core/pull/1751))
 - Remove the hover on the left-hand side logo (bobdenotter, [#1750](https://github.com/bolt/core/pull/1750))
 - Make relative dates work for fields that have an underscore in their name (bobdenotter, [#1748](https://github.com/bolt/core/pull/1748))
@@ -1251,7 +1322,6 @@ Released: 2020-06-29
 ### 🛠️ Miscellaneous
 
 - Better UI for dragging in multiselect (I-Valchev, [#1550](https://github.com/bolt/core/pull/1550))
-- Prepare release 4.0.0-rc.26 (bobdenotter, [#1539](https://github.com/bolt/core/pull/1539))
 
 ### 🤖 Tests
 

@@ -2691,12 +2691,6 @@
         <target>Upload Options</target>
       </segment>
     </unit>
-    <unit id="NF.vvAN" name="You have to login in order to access this page.">
-      <segment>
-        <source>You have to login in order to access this page.</source>
-        <target>You have to login in order to access this page.</target>
-      </segment>
-    </unit>
     <unit id="hKmDb7q" name="Share secure preview link">
       <segment>
         <source>Share secure preview link</source>
@@ -2709,6 +2703,7 @@
         <target>Order</target>
       </segment>
     </unit>
+
     <unit id="MjY7.cg" name="modal.title.file_field">
       <segment>
         <source>modal.title.file_field</source>
@@ -2725,6 +2720,18 @@
       <segment>
         <source>modal.title.upload_from_url</source>
         <target>Upload from URL</target>
+      </segment>
+    </unit>
+    <unit id="Y7ajNNN" name="placeholder.email">
+      <segment>
+        <source>placeholder.email</source>
+        <target>your email</target>
+      </segment>
+    </unit>
+    <unit id="NF.vvAN" name="You have to login in order to access this page.">
+      <segment>
+        <source>You have to login in order to access this page.</source>
+        <target>You have to login in order to access this page.</target>
       </segment>
     </unit>
   </file>
