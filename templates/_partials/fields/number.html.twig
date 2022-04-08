@@ -13,7 +13,7 @@
   {% elseif not step|default %}
     {# default step values #}
     {% if mode == 'float' %}
-      {% set step = 0.5 %}
+      {% set step = "'any'" %}
     {% elseif mode == 'integer' %}
       {% set step = 1 %}
     {% else %}
@@ -26,7 +26,7 @@
     :id='{{ id|json_encode }}'
     name="{{ name }}"
     value="{{ value }}"
-    :step="{{ step }}"
+    :step="{{ step|raw }}"
     :required="{{ required|json_encode }}"
     :readonly="{{ readonly|json_encode }}"
     :errormessage="{{ errormessage|json_encode }}"
