@@ -2703,7 +2703,6 @@
         <target>Order</target>
       </segment>
     </unit>
-
     <unit id="MjY7.cg" name="modal.title.file_field">
       <segment>
         <source>modal.title.file_field</source>
@@ -2732,6 +2731,12 @@
       <segment>
         <source>You have to login in order to access this page.</source>
         <target>You have to login in order to access this page.</target>
+      </segment>
+    </unit>
+    <unit id="ODb3pJA" name="modal.text.loading">
+      <segment>
+        <source>modal.text.loading</source>
+        <target>Loading...</target>
       </segment>
     </unit>
   </file>
